@@ -34,9 +34,9 @@ genre_dict = {
 }
 
 # Load the name lists from local CSV files
-directors_list = pd.read_csv("directors.csv").squeeze().dropna().unique().tolist()
-actors_list = pd.read_csv("actors.csv").squeeze().dropna().unique().tolist()
-producers_list = pd.read_csv("producers.csv").squeeze().dropna().unique().tolist()
+directors_list = pd.read_csv("directors.csv").columns.tolist()
+actors_list = pd.read_csv("actors.csv").columns.tolist()
+producers_list = pd.read_csv("producers.csv").columns.tolist()
 
 # Input fields
 selected_directors = st.multiselect("Select directors:", sorted(directors_list))
