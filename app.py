@@ -15,7 +15,7 @@ def load_model():
 # Load PCA model
 @st.cache_resource
 def load_pca():
-    with open("embedding-pca.pkl", "rb") as f:
+    with open("pca_model.pkl", "rb") as f:
         return pickle.load(f)
 
 model = load_model()
