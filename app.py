@@ -20,7 +20,7 @@ def load_pca():
 
 model = load_model()
 pca = load_pca()
-embedder = SentenceTransformer('all-MiniLM-L6-v2')
+embedder = SentenceTransformer('./all-MiniLM-L6-v2')
 
 st.title("🎬 IMDA Movie Rating Predictor")
 st.markdown("Predict the IMDA rating for a movie based on its genres, key cast/crew, and plot embedding.")
